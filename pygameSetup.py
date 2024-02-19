@@ -1,3 +1,4 @@
+# Imports
 import pygame, sys
 
 # General Setup
@@ -17,6 +18,6 @@ while True:
             pygame.quit()
             sys.exit()
 
-#updateing the window 
+# Updating the window 
 pygame.display.flip()
 clock.tick(60)
