@@ -52,9 +52,11 @@ ball = pygame.Rect(screen_width/2 - 15,screen_height/2 - 15,30,30)
 player = pygame.Rect(screen_width - 20,screen_height/2 - 70,10,140)
 opponent =  pygame.Rect(10, screen_height/2 - 70, 10, 140)
 
+# Colors
 bg_color = pygame.Color('grey12')
 light_grey = (200,200,200)
 
+# Speeds
 ball_speed_x = 7 * random.choice((1, -1))
 ball_speed_y = 7 * random.choice((1, -1))
 player_speed = 0
@@ -66,6 +68,7 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+    #  User Inputs
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_DOWN:
                 player_speed +=7
