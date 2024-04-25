@@ -1,6 +1,6 @@
 #Imports
 import pygame, sys, random
-
+#A comment right here
 def ball_animation():
     global ball_speed_x, ball_speed_y
     ball.x += ball_speed_x
